@@ -1,0 +1,141 @@
+.cuadro {
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #1f2a44;
+  padding: 5px;
+  border: 3px dashed #ff6600;
+  cursor: pointer;
+  flex: 1;       
+  max-width: 300px;
+  border-radius: 20px;
+  text-align: center;
+}
+.cube{
+  width: 100%;
+  height: 50px;
+  border: 3px dashed #003366;
+  border-radius: 10px;
+  cursor: default;
+  transition: none;
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.hover-expandible:hover {
+  height: auto;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.contenedor {
+    display: flex;    
+    gap: 10px;            
+    align-items: flex-start;
+  justify-content: center; /* Centra todo horizontalmente */
+  flex-wrap: wrap; /* Para que no se desborden en pantallas pequeñas */
+}
+
+#c1:checked + label[for="c1"],
+#c2:checked + label[for="c2"],
+#c3:checked + label[for="c3"] {
+  height: auto;
+  background-color: #d0ffd0;
+}
+.fondo {
+  background-color: #fdfaf6;
+  padding: 2%;
+}
+
+/* HERO como encabezado */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen de fondo nítida/difuminada */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px) brightness(60%);
+  transform: scale(1.1);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px) brightness(70%); /* Difumina y oscurece ligeramente */
+  transform: scale(1.1); /* Evita bordes visibles por el blur */
+}
+
+/* Contenido del hero */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  text-shadow: 2px 2px 4px white;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #990000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #003d80;
+}
+.cube2{
+  width: 100%;
+  height: 50px;
+  border: 3px dashed #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(19, 166, 203);
+  text-align: center;
+}
+
+.image{
+  align-items: center;
+  width: 50%;
+  height: 25%;
+}
+
+.cuadro2 {
+  width: 200px;
+  height: 500px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #e2edc9;
+  padding: 5px;
+  border: 3px dashed #000000;
+  cursor: pointer;
+  flex: 1;       
+  max-width: 300px;
+  border-radius: 20px;
+  text-align: center;
+}
